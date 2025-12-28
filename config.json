@@ -1,1 +1,17 @@
-
+{
+  "name": "Signal API Receiver",
+  "version": "1.0.0",
+  "slug": "signal_api_receiver",
+  "description": "Home Assistant add-on for signal-api-receiver (incoming Signal messages)",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "options": {
+    "signal_api_url": "wss://your-signal-api-url",
+    "port": 8105
+  },
+  "schema": {
+    "signal_api_url": "str",
+    "port": "int"
+  }
+}
