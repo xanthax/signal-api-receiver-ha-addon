@@ -1,0 +1,6 @@
+---
+channel: stable
+addons:
+  signal_messenger:
+    repository: xanthax/signal-api-receiver-ha-addon/
+    target: signal
