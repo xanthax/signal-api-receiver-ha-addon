@@ -1,0 +1,15 @@
+name: Signal API Receiver
+slug: signal_api_receiver
+description: Receive Signal messages via signal-api-receiver
+version: "1.0.0"
+startup: services
+boot: auto
+host_network: true
+
+options:
+  signal_api_url: "ws://172.30.33.6:8080/v1/receive"
+  listen_port: 8105
+
+schema:
+  signal_api_url: str
+  listen_port: int
